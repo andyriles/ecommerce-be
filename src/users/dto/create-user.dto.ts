@@ -9,6 +9,10 @@ export class UsersDTO {
   @IsString()
   name?: string;
 
+  @IsOptional()
+  @IsString()
+  phoneNumber?: string;
+
   @IsNotEmpty()
   @IsString()
   password: string;

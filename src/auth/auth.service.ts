@@ -51,6 +51,7 @@ export class AuthService {
           msg: {
             name: userDetails.name,
             email: user.email,
+            phoneNumber: userDetails.phoneNumber,
             role: userDetails.roles,
             access_token: this.jwtService.sign({ email: user.email }),
           },
@@ -72,6 +73,7 @@ export class AuthService {
     const userDTO = new UsersDTO();
     userDTO.email = body.email;
     userDTO.name = body.name;
+    userDTO.phoneNumber = body.phoneNumber;
     userDTO.password = hashSync(body.password, 10);
 
     // Validate DTO against validate function from class-validator

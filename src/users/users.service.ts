@@ -16,6 +16,7 @@ export class UsersService {
 
     user.name = createUserDto.name;
     user.email = createUserDto.email;
+    user.phoneNumber = createUserDto.phoneNumber;
     user.password = createUserDto.password;
 
     return this.usersRepository.save(user);
@@ -27,7 +28,7 @@ export class UsersService {
 
   findOne(email: string): Promise<User> {
     return this.usersRepository.findOne({
-      email: email,
+      email,
     });
   }
 

@@ -9,6 +9,9 @@ export class Order {
   @Column()
   customerName: string;
 
+  @Column()
+  customerEmail: string;
+
   @ManyToMany(() => Product)
   @JoinTable()
   products: Product[];

@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "The ultimate collection of production-ready and flexible NestJS Boilerplate.",
   "author": {
-    "name": "Joey Goksu",
-    "email": "me@joeygoksu.com",
-    "url": "https://joeygoksu.com"
+    "name": "Andyriles",
+    "email": "andyriles22@gmail.com",
+    "url": "https://andrew-efurhievwe.vercel.app"
   },
   "private": false,
   "license": "MIT",
@@ -47,6 +47,7 @@
     "class-validator": "^0.13.2",
     "dotenv": "^10.0.0",
     "helmet": "^4.6.0",
+    "nodemailer": "^6.9.1",
     "passport": "^0.4.1",
     "passport-jwt": "^4.0.0",
     "passport-local": "^1.0.0",
@@ -55,6 +56,7 @@
     "rimraf": "^3.0.2",
     "rxjs": "^7.2.0",
     "swagger-ui-express": "^4.1.6",
+    "twilio": "^4.10.0",
     "typeorm": "^0.2.37"
   },
   "devDependencies": {
