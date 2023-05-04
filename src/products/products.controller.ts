@@ -31,7 +31,6 @@ export class ProductsController {
       const products = await this.productService.findAll();
       res.status(200).send({ msg: 'success', products });
     } catch (error) {
-      console.log(error);
       res.status(400).send({ msg: 'An error occurred' });
     }
   }
